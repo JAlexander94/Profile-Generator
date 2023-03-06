@@ -92,8 +92,8 @@ const internquestions = [
     },
     {
         type: 'input',
-        name: 'github',
-        message: 'What shcool is the intern attending?',
+        name: 'school',
+        message: 'What school is the intern attending?',
     },
     {
         type: 'list',
@@ -102,3 +102,40 @@ const internquestions = [
         choices: ['Add an engineer', 'Add an intern', 'Finish Building the team'],
     }
 ];
+
+function init(){
+    inquirer.prompt(firstquestions)
+    .then((data)=>{
+        const manager = new Manager(data.name, data.id,data.email,data.officeNumber)
+        const team = [manager]
+        let menu = data.menu;
+        function askQuestions() {
+            if (menu==='Finish Building the team'){            
+                console.log(team);
+                const html = render(team);
+                fs.writeFileSync(outputPath, html);
+                return;
+            } else if (menu==='Add an engineer'){
+                inquirer.prompt(engineerquestions)
+                .then((data)=>{
+                    const engineer = new Engineer(data.name, data.id,data.email,data.github)
+                    team.push(engineer);
+                    menu = data.menu;
+                    askQuestions();
+                })
+            } else {
+                inquirer.prompt(internquestions)
+                .then((data)=>{
+                    const intern = new Intern(data.name, data.id,data.email,data.school)
+                    team.push(intern);
+                    menu = data.menu;
+                    askQuestions();
+                })
+            }
+        }
+        askQuestions();
+    })
+}
+
+
+init()
