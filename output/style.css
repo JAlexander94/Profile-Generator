@@ -16,4 +16,13 @@
 
 .employee-card{
     box-shadow: 6px 6px 3px gray;
+    width: 250px;
+    margin: 10px;
 }
+
+.team-area{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+

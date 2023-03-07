@@ -103,6 +103,8 @@ const internquestions = [
     }
 ];
 
+//initialisation function triggering the inquirer questions and with a loop asking for employees until breaking the loop with 'finish building team'
+//uses the methods from the js files in the lib folder to organise the data from the inquirer script and feed it into the render function which uses the page-template.js in the src folder
 function init(){
     inquirer.prompt(firstquestions)
     .then((data)=>{
