@@ -21,8 +21,8 @@ The application is invoked by using node index.js in the command-line
 A user generates a webpage that displays their team's basic info so that they have quick access to their emails, GitHub profiles and schools by running node index.js in the command-line and then following the prompts until all their teams details are inputted.
 
 
-![screenshot of the webpage that is created]()
-![screenshot of the command-line as it is prompting the user to answer questions about the team and whther to add more team member or finish building the team]()
+![screenshot of the webpage that is created](https://github.com/JAlexander94/Profile-Generator/blob/main/images/Screenshot%202023-03-07%20at%2021.51.54.png)
+![screenshot of the command-line as it is prompting the user to answer questions about the team and whther to add more team member or finish building the team](https://github.com/JAlexander94/Profile-Generator/blob/main/images/Screenshot%202023-03-07%20at%2021.52.54.png)
 
 
 ## License
