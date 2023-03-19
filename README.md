@@ -24,6 +24,7 @@ A user generates a webpage that displays their team's basic info so that they ha
 ![screenshot of the webpage that is created](https://github.com/JAlexander94/Profile-Generator/blob/main/images/Screenshot%202023-03-07%20at%2021.51.54.png)
 ![screenshot of the command-line as it is prompting the user to answer questions about the team and whther to add more team member or finish building the team](https://github.com/JAlexander94/Profile-Generator/blob/main/images/Screenshot%202023-03-07%20at%2021.52.54.png)
 
+![video of the app in use and the html webpage it outputs](https://drive.google.com/file/d/170BU_QToqiBWbiRVrAAhsTuXkN4Xs4Ik/view)
 
 ## License
 
